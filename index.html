@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portafolio — Edwuar J. Parra</title>
+    <meta name="description" content="Portafolio profesional de Edwuar J. Parra — Ingeniero de Sistemas y Desarrollador de Software." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="Jv" href="Jv.js" />
+
+</head>
+<body>
+    <div class="container" role="main">
+        <header class="card" aria-labelledby="title">
+            <div class="brand">
+                <div class="avatar">
+                   <img src="Imagenes/Foto.jpg" alt="Foto de Edwuar J. Parra" loading="lazy">
+                </div>
+                <div>
+                    <h1 id="title">Edwuar J. Parra</h1>
+                    <p class="lead">Ingeniero de Sistemas • Desarrollador de Software</p>
+                    <p class="lead" style="margin-top:6px;">HTML • CSS • GitHub • Diseño Web</p>
+                </div>
+            </div>
+
+           <nav class="actions" aria-label="Acciones">
+             <!-- Usa href relativo al proyecto y el atributo download para forzar descarga -->
+            <a class="ghost" href="CV/Currículum Edwuar Jose Parra.pdf" download>Descargar CV</a>
+            </nav>
+        </header>
+
+        <aside class="sidebar" aria-labelledby="perfil">
+            <h2 id="perfil" class="section-title">Contacto</h2>
+            <div class="contact-list">
+                <div class="contact-item"><span class="tag">📍</span> Maracay, Edo. Aragua</div>
+                <div class="contact-item"><span class="tag">✉️</span> <a href="mailto:edwuarj2013@gmail.com">edwuarj2013@gmail.com</a></div>
+                <div class="contact-item"><span class="tag">📞</span> (0412) 8910931 / (0412) 4521384</div>
+            </div>
+
+            <h3 class="section-title">Idiomas</h3>
+            <p class="about">Español — Nativo</p>
+
+            <h3 class="section-title">Habilidades</h3>
+            <ul class="softskills">
+                <li>Deseos de aprender</li>
+                <li>Responsable y honesto</li>
+                <li>Actitud positiva y de servicio</li>
+                <li>Facilidad para trabajar en equipo</li>
+                <li>Rápida adaptación</li>
+                <li>Proactividad</li>
+            </ul>
+
+            <h3 class="section-title">Tecnologías</h3>
+            <div class="badges">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">Inkscape</span>
+                <span class="badge">Canva</span>
+                <span class="badge">Adobe Illustrator</span>
+                <span class="badge">ChatGPT</span>
+                <span class="badge">Microsoft Copilot</span>
+            </div>
+        </aside>
+
+        <main class="card" aria-labelledby="sobre">
+            <section id="sobre">
+                <h2 class="section-title">Sobre mí</h2>
+                <p class="about">Soy un apasionado de la informática y la tecnología, siempre con el deseo de aprender cosas nuevas. Me considero responsable, honesto y con actitud positiva. Me adapto con facilidad y disfruto trabajar en equipo. Mi pasión por la tecnología me impulsa a mejorar continuamente y asumir nuevos desafíos.</p>
+            </section>
+
+            <section>
+                <h3 class="section-title">Experiencia</h3>
+                <div class="timeline">
+                    <div class="item">
+                        <h5>Instructor voluntario de tecnología — Parroquia La Ascensión (May 2023 - Jul 2023)</h5>
+                        <p>Clases de informática para niños, mantenimiento y reparaciones de equipos.</p>
+                    </div>
+                    <div class="item">
+                        <h5>Desarrollador de Software — CEMA VZLA (Abr 2024 - Ago 2025)</h5>
+                        <p>Diseño y creación de sistemas de información.</p>
+                    </div>
+                    <div class="item">
+                        <h5>Técnico de soporte TIC — Clínica Lugo (Oct 2024 - Dic 2024)</h5>
+                        <p>Instalación, configuración y mantenimiento de equipos. Formateo e instalación de software.</p>
+                    </div>
+                </div>
+            </section>
+
+           <section>
+                <h3 class="section-title">Datos academicos</h3>
+                <div class="Education">
+                    <div class="item">
+                        <h5>Primaria: E.B “Francisco de Miranda”</h5>
+                    </div>
+                    <div class="item">
+                        <h5>Secundaria: U.E.P “República de Venezuela</h5>
+                    </div>
+                    <div class="item">
+                        <h5>Superior: I.U.P “Santiago Mariño” (Acto de graduación pendiente)</h5>
+                    </div>
+                    <div class="item">
+                        <h5>Cursos y certificaciones</h5>
+                        <p>Operador Windows — Centro de formación Maracay (2016)</p>
+                        <p>Ensamblaje y mantenimiento de computadoras — Centro de formación Maracay (2016)</p>
+                        <p>Algorítmica — Centro Escuela de Sistemas e Informática (2018)</p>
+                        <p>Diseño Web con HTML5 + CSS — Programa de formación digital Conecta Empleo (2022)</p>
+                        <p>Office básico — Programa de formación digital Conecta Empleo (2022)</p>
+                        <p>Curso de programación básica — Platzi (2023)</p>
+                        <p>Mantenimiento y ensamblaje de equipos — Centro Escuela de Sistemas e Informática (2024)</p>
+                    </div>
+                </div>
+            </section>
+            </section>
+        </main>
+
+        <footer>
+            <div>© <span id="year"></span> Edwuar J. Parra — Ingeniero de Sistemas</div>
+        </footer>
+    </div>
+
+    <script>
+        function downloadCV(){
+            const url = '/mnt/data/Currículum Edwuar Jose Parra (5-11-2025).pdf';
+            window.open(url, '_blank');
+        }
+
+        function handleSubmit(e){
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value || 'Contacto desde portafolio';
+            const message = document.getElementById('message').value;
+            const mailto = `mailto:edwuarj2013@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Nombre: '+name+' ('+email+')\n\n'+message)}`;
+            window.location.href = mailto;
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
