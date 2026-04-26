@@ -5,15 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portafolio | Edwuar J. Parra</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    
     <style>
         /* --- ESTILOS ADICIONALES PARA LAS TARJETAS --- */
         .card {
-            display: flex; /* Alinea logo y texto en fila */
-            align-items: center; /* Centra verticalmente */
-            gap: 20px; /* Espacio entre el logo y el texto */
-            background: rgba(255, 255, 255, 0.05); /* Un toque de fondo para visibilidad */
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.05);
             padding: 2em;
             border-radius: 10px;
             margin-bottom: 2em;
@@ -22,14 +24,43 @@
         }
 
         .card-logo {
-            width: 80px; /* Ajusta el tamaño según necesites */
+            width: 80px;
             height: 80px;
             object-fit: contain;
-            flex-shrink: 0; /* Evita que el logo se encoja */
+            flex-shrink: 0;
         }
 
         .card-contenido {
-            flex: 1; /* El texto ocupa el resto del espacio */
+            flex: 1;
+        }
+
+        /* --- BOTÓN DE LINKEDIN --- */
+        .boton-linkedin {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px 35px;
+            background-color: #0077b5; /* Azul LinkedIn */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            border: 2px solid #0077b5;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .boton-linkedin:hover {
+            background-color: transparent;
+            color: #0077b5;
+            box-shadow: 0 0 20px rgba(0, 119, 181, 0.6);
+            transform: scale(1.05);
+        }
+
+        .boton-linkedin i {
+            font-size: 1.3em;
         }
 
         /* Ajuste para móviles */
@@ -69,7 +100,6 @@
 					Siempre en constante aprendizaje para asumir nuevos desafíos.
 				</p>
 				<a href="Ver_proyectos.html" class="proyectos">Ver proyectos</a>
-
 			</div>
 		</section>
 
@@ -133,9 +163,13 @@
 			</div>
 		</section>
 
-		<section id="contacto" class="contenedor seccion">
+		<section id="contacto" class="contenedor seccion" style="text-align: center;">
 			<h2>Contacto</h2>
-			<p>🔗 www.linkedin.com/in/edwuar-parra-7a8a47253</p>
+			<p>¿Te gustaría conectar conmigo? Visita mi perfil profesional</p>
+            
+            <a href="https://www.linkedin.com/in/edwuar-parra-7a8a47253" target="_blank" class="boton-linkedin">
+                <i class="fab fa-linkedin"></i> Conectar en LinkedIn
+            </a>
 		</section>
 
 	</main>
